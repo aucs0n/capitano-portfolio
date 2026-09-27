@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ghemarson John Nacua | The Captain's Watch</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#e8cf98",
+                    "on-primary-fixed-variant": "#234a68",
+                    "on-secondary-fixed-variant": "#284a61",
+                    "on-secondary-fixed": "#001e2e",
+                    "tertiary": "#c9a45c",
+                    "tertiary-fixed": "#2e2616",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#3d6281",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#151c24",
+                    "primary": "#9fd3ff",
+                    "on-tertiary-fixed": "#f5e6c4",
+                    "surface-container-highest": "#223040",
+                    "surface-container-lowest": "#0e141b",
+                    "surface-container-low": "#121a22",
+                    "outline": "#5c6b7a",
+                    "secondary-container": "#26384a",
+                    "surface": "#0b1016",
+                    "on-primary-fixed": "#001d32",
+                    "surface-dim": "#080c11",
+                    "inverse-surface": "#e6edf3",
+                    "surface-container-high": "#1c2733",
+                    "inverse-on-surface": "#0b1016",
+                    "surface-variant": "#223040",
+                    "surface-tint": "#9fd3ff",
+                    "on-surface": "#e6edf3",
+                    "on-background": "#e6edf3",
+                    "on-secondary": "#0b1016",
+                    "secondary": "#8fa3b8",
+                    "primary-container": "#2b4a66",
+                    "tertiary-container": "#5a4722",
+                    "surface-container": "#17212b",
+                    "on-secondary-container": "#c9d6e3",
+                    "primary-fixed": "#cfe8ff",
+                    "background": "#0b1016",
+                    "on-tertiary-container": "#f5e6c4",
+                    "on-primary-container": "#cfe8ff",
+                    "tertiary-fixed-dim": "#5a4722",
+                    "secondary-fixed": "#c8e6ff",
+                    "on-primary": "#07121c",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#a8cbe6",
+                    "on-tertiary": "#1a1408",
+                    "primary-fixed-dim": "#9fd3ff",
+                    "on-surface-variant": "#a9b6c3",
+                    "outline-variant": "#2c3a48"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Cinzel", "Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ethereal-glow {
+            background: radial-gradient(circle at top right, rgba(159, 211, 255, 0.10) 0%, rgba(11, 16, 22, 0) 60%);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #cfe8ff 0%, #6fa6d6 100%);
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, h4, .serif { font-family: 'Cinzel', 'Noto Serif', serif; letter-spacing: 0.02em; }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/70 backdrop-blur-xl border-b border-slate-800/60">
+<div class="flex justify-between items-center gap-4 px-4 md:px-12 py-4 md:py-6 max-w-7xl mx-auto">
+<a class="text-xl md:text-2xl font-serif italic text-sky-100" href="#">The Captain's Watch</a>
+<div class="hidden md:flex items-center gap-8 font-serif font-medium tracking-wide">
+<a class="text-slate-300 hover:text-white transition-colors duration-300" href="#about">About</a>
+<a class="text-slate-300 hover:text-white transition-colors duration-300" href="#education">Education</a>
+<a class="text-slate-300 hover:text-white transition-colors duration-300" href="#quests">Security</a>
+<a class="text-slate-300 hover:text-white transition-colors duration-300" href="#artifacts">Projects</a>
+<a class="text-slate-300 hover:text-white transition-colors duration-300" href="#pastimes">Pastimes</a>
+</div>
+<div class="hidden md:flex items-center gap-4 mr-4 text-slate-300">
+<a class="hover:text-primary transition-colors duration-300 flex items-center justify-center" href="https://github.com/aucs0n" target="_blank" title="GitHub">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+<a class="hover:text-primary transition-colors duration-300 flex items-center justify-center" href="https://www.linkedin.com/in/ghemarson-john-nacua-4422b8289" target="_blank" rel="noopener" title="LinkedIn">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+</a>
+<a class="hover:text-primary transition-colors duration-300 flex items-center justify-center" href="https://www.youtube.com/@aucs0n" target="_blank" title="YouTube">
+<span class="material-symbols-outlined text-[28px]">play_circle</span>
+</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-serif font-medium hover:scale-105 transition-transform ease-in-out block" href="mailto:ghemarson.nacua@gmail.com">Contact</a>
+</div>
+</nav>
+<main class="ethereal-glow pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center justify-center px-6 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<svg class="w-full h-full opacity-70" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Snowy mountains under a night sky">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1016"></stop><stop offset="1" stop-color="#1b2a3a"></stop></linearGradient></defs>
+<rect width="1440" height="900" fill="url(#sky)"></rect>
+<circle cx="1120" cy="250" r="70" fill="#e6edf3" opacity="0.25"></circle><g fill="#e6edf3" opacity="0.5"><circle cx="160" cy="120" r="1.5"></circle><circle cx="420" cy="200" r="1.2"></circle><circle cx="700" cy="90" r="1.6"></circle><circle cx="900" cy="180" r="1.1"></circle><circle cx="1300" cy="120" r="1.4"></circle><circle cx="1000" cy="60" r="1.2"></circle><circle cx="300" cy="300" r="1"></circle></g>
+<path d="M0 620 L180 430 L320 540 L520 320 L700 520 L860 380 L1040 560 L1240 360 L1440 520 L1440 900 L0 900 Z" fill="#2b4a66"></path>
+<path d="M520 320 L570 380 L540 372 L520 395 L498 370 L470 380 Z M1240 360 L1285 410 L1258 404 L1240 425 L1220 402 L1195 410 Z" fill="#ffffff" opacity="0.9"></path>
+<path d="M0 720 L220 560 L400 680 L620 520 L820 700 L1020 560 L1240 700 L1440 600 L1440 900 L0 900 Z" fill="#1c2f42"></path>
+<path d="M0 820 L260 700 L520 800 L780 690 L1060 810 L1300 720 L1440 780 L1440 900 L0 900 Z" fill="#0e141b"></path>
+</svg>
+</div>
+<div class="max-w-4xl text-center z-10 space-y-8">
+<div class="flex justify-center mb-4">
+<span class="material-symbols-outlined text-6xl text-tertiary opacity-80">shield</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold text-on-surface leading-tight">
+                Ghemarson John Nacua: <br/>
+<span class="text-primary italic">Standing Guard Over the Network.</span>
+</h1>
+<p class="text-xl text-secondary max-w-2xl mx-auto font-light leading-relaxed">
+                A fourth-year Computer Engineering student who builds systems the way a captain leads: steady under pressure, loyal to the team, and first in line to defend it.
+            </p>
+<div class="pt-4">
+<a class="hero-gradient text-on-primary px-10 py-4 rounded-lg text-lg font-medium shadow-lg hover:shadow-primary/20 transition-all inline-block" href="#about">
+                    Read the Record
+                </a>
+</div>
+</div>
+</section>
+<!-- The Captain's Record (About Me) -->
+<section class="py-32 px-6 max-w-6xl mx-auto" id="about">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<div role="img" aria-label="Captain's shield emblem" class="w-full h-full relative flex flex-col items-center justify-center text-on-surface" style="background: linear-gradient(160deg, #1c2733 0%, #0b1016 70%);">
+<svg class="absolute bottom-0 left-0 w-full opacity-60" viewBox="0 0 400 160" preserveAspectRatio="none" aria-hidden="true"><path d="M0 160 L0 110 L70 50 L120 90 L190 20 L260 95 L320 55 L400 105 L400 160 Z" fill="#2b4a66"></path></svg>
+<span class="material-symbols-outlined text-tertiary mb-4" style="font-size:5rem">shield</span>
+<span class="font-serif font-bold tracking-widest" style="font-size:4.5rem;line-height:1">GJN</span>
+<span class="mt-4 text-xs uppercase tracking-[0.35em] text-primary">Computer Engineering · USC</span>
+</div>
+</div>
+<div class="absolute -bottom-8 right-0 md:-right-8 bg-tertiary-fixed p-8 rounded-xl shadow-xl max-w-xs">
+<p class="font-serif italic text-on-tertiary-fixed-variant leading-relaxed">
+                        "A shield is only as strong as the one who chooses to hold it."
+                    </p>
+</div>
+</div>
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="h-[2px] w-12 bg-primary-container"></span>
+<h2 class="text-4xl font-bold">The Captain's Record</h2>
+</div>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+<p>
+                        Like the Captain, Ghemarson John Nacua believes that leadership means standing in front of the people you protect. As a fourth-year Computer Engineering student, he approaches every project not just as a task, but as a mission to be seen through to the end.
+                    </p>
+<p>
+                        Proactive, versatile, and an aspiring leader, Ghemarson thrives in the intersection of complex hardware and elegant software. He doesn't just build systems; he builds the future with the discipline of a soldier and a meticulous eye for detail.
+                    </p>
+</div>
+<div class="flex gap-4">
+<div class="bg-surface-container-low px-6 py-4 rounded-lg border border-outline-variant/10">
+<span class="block text-2xl font-bold text-primary italic">Steadfast</span>
+<span class="text-sm text-secondary uppercase tracking-widest">Resolve</span>
+</div>
+<div class="bg-surface-container-low px-6 py-4 rounded-lg border border-outline-variant/10">
+<span class="block text-2xl font-bold text-primary italic">Versatile</span>
+<span class="text-sm text-secondary uppercase tracking-widest">Class</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Current Quest -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-surface-container-lowest rounded-xl p-12 shadow-sm border border-outline-variant/10 flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/3">
+<div class="w-24 h-24 bg-primary-container/20 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-5xl text-primary" data-weight="fill">shield_person</span>
+</div>
+<h2 class="text-3xl font-bold mb-4">Current Mission</h2>
+<div class="inline-flex items-center gap-2 bg-tertiary-fixed px-3 py-1 rounded-full text-xs font-bold uppercase tracking-tighter text-on-tertiary-fixed-variant">
+                        On Duty
+                    </div>
+</div>
+<div class="md:w-2/3">
+<h3 class="text-4xl font-serif italic text-primary mb-6">Exploring Cloud Security</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        Every front line needs a guard. Ghemarson is now training in Cloud Security, learning to harden cloud architectures and protect data wherever it lives.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Record (Education Timeline) -->
+<section class="py-32 px-6 max-w-7xl mx-auto" id="education">
+<div class="text-center mb-20">
+<h2 class="text-4xl md:text-5xl font-bold mb-4 text-primary font-serif italic">Service Record</h2>
+<div class="flex justify-center">
+<span class="material-symbols-outlined text-tertiary text-4xl">military_tech</span>
+</div>
+</div>
+<div class="relative">
+<!-- Center Line -->
+<div class="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-primary-container/40"></div>
+<div class="space-y-24">
+<!-- University of San Carlos -->
+<div class="relative flex items-center justify-center w-full">
+<div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-12 h-12 bg-surface-container border-2 border-primary rounded-full flex items-center justify-center z-10 shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl">school</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 w-full">
+<div class="md:col-start-2 pl-16">
+<div class="bg-surface-container/80 backdrop-blur-sm p-8 rounded-2xl border border-primary-container/20 shadow-sm hover:shadow-md transition-shadow group max-w-md">
+<div class="flex justify-between items-start gap-4 mb-4">
+<h3 class="text-xl font-bold text-primary leading-tight font-serif italic">Bachelor of Science in Computer Engineering</h3>
+<span class="text-xs font-bold text-secondary/60 italic font-serif shrink-0">2023 — Present</span>
+</div>
+<p class="text-on-surface-variant font-medium">University of San Carlos</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Senior High School -->
+<div class="relative flex items-center justify-center w-full">
+<div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-12 h-12 bg-surface-container border-2 border-primary-container rounded-full flex items-center justify-center z-10 shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-xl">verified</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 w-full">
+<div class="md:col-start-1 pl-16 md:pl-0 md:pr-16 md:text-right flex md:justify-end">
+<div class="bg-surface-container/80 backdrop-blur-sm p-8 rounded-2xl border border-primary-container/20 shadow-sm hover:shadow-md transition-shadow group max-w-md w-full">
+<div class="flex justify-between items-start gap-4 mb-4 md:flex-row-reverse">
+<h3 class="text-xl font-bold text-primary leading-tight font-serif italic md:text-right">Senior High School (STEM)</h3>
+<span class="text-xs font-bold text-secondary/60 italic font-serif shrink-0">2021 — 2023</span>
+</div>
+<p class="text-on-surface-variant font-medium">University of San Carlos</p>
+<p class="text-xs text-primary/70 mt-2 font-serif">☆ Graduated with Honors</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Junior High School -->
+<div class="relative flex items-center justify-center w-full">
+<div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-12 h-12 bg-surface-container border-2 border-primary-container rounded-full flex items-center justify-center z-10 shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-xl">history_edu</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 w-full">
+<div class="md:col-start-2 pl-16">
+<div class="bg-surface-container/80 backdrop-blur-sm p-8 rounded-2xl border border-primary-container/20 shadow-sm hover:shadow-md transition-shadow group max-w-md">
+<div class="flex justify-between items-start gap-4 mb-4">
+<h3 class="text-xl font-bold text-primary leading-tight font-serif italic">Junior High School</h3>
+</div>
+<p class="text-on-surface-variant font-medium">San Roque College de Cebu (Main Campus)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Security Quests (Information Engineering 1-3) -->
+<section class="py-32 px-6 max-w-7xl mx-auto" id="quests">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-4xl font-bold mb-6 italic font-serif">Security Campaigns</h2>
+<p class="text-on-surface-variant text-lg">Information Engineering is one connected campaign, each course building on the last. It starts with cryptography and securing a server–client app, moves on to attacking and defending real software-defined networks, and ends with the final course: an AI system that stops attacks on its own, and a formal proof that finds the flaw in an authentication protocol.</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-4xl opacity-40">key</span>
+<span class="material-symbols-outlined text-primary text-4xl opacity-60">shield_lock</span>
+<span class="material-symbols-outlined text-primary text-4xl opacity-40">lan</span>
+</div>
+</div>
+<div class="space-y-16">
+<!-- InfoEng 1 -->
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-on-primary font-bold shrink-0">1</span>
+<h3 class="text-2xl font-bold font-serif italic text-primary">Information Engineering 1 <span class="block md:inline text-xs uppercase tracking-widest not-italic font-sans font-bold text-secondary/70 md:ml-2">Step 1 · Basic Training</span> <span class="text-base not-italic font-sans font-medium text-secondary/70">· CPE 3151 · Sep — Dec 2025</span></h3>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 text-primary font-bold tracking-tighter uppercase text-xs">
+<span class="material-symbols-outlined text-base">lock</span>
+                        Applied Cryptography
+                    </div>
+<h4 class="text-2xl font-bold">CIA: Secure Server–Client Code</h4>
+<ul class="list-disc pl-5 space-y-2 text-on-surface-variant leading-relaxed">
+<li>Developed a multi-threaded Python application enabling simultaneous two-way messaging between clients and a central server.</li>
+<li>Implemented an end-to-end security layer using RSA for encryption, and used the <code>cryptography</code> package for digital signatures and verification, ensuring data integrity and confidentiality.</li>
+</ul>
+<div class="flex flex-wrap gap-2 mt-auto pt-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Python</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Sockets</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Threading</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">RSA</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Digital Signatures</span>
+</div>
+</article>
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 text-primary font-bold tracking-tighter uppercase text-xs">
+<span class="material-symbols-outlined text-base">menu_book</span>
+                        Cryptography Foundations
+                    </div>
+<h4 class="text-2xl font-bold">Cryptography Labs</h4>
+<ul class="list-disc pl-5 space-y-2 text-on-surface-variant leading-relaxed">
+<li>Broke a reused-key stream cipher with a crib-drag attack.</li>
+<li>Covered symmetric and public-key cryptography, hash functions and message authentication, digital signatures, and authentication protocols in mobile networks.</li>
+<li>Designed a client–server security diagram before adding security to the course's server–client application.</li>
+</ul>
+<div class="flex flex-wrap gap-2 mt-auto pt-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Crib-Drag</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Hashing &amp; MACs</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">PKI</span>
+</div>
+</article>
+</div>
+</div>
+<div class="flex justify-center -my-6" aria-hidden="true"><span class="material-symbols-outlined text-primary-container text-4xl">south</span></div>
+<!-- InfoEng 2 -->
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-on-primary font-bold shrink-0">2</span>
+<h3 class="text-2xl font-bold font-serif italic text-primary">Information Engineering 2 <span class="block md:inline text-xs uppercase tracking-widest not-italic font-sans font-bold text-secondary/70 md:ml-2">Step 2 · Holding the Line</span> <span class="text-base not-italic font-sans font-medium text-secondary/70">· CPE 3252 · Jan — May 2026</span></h3>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 text-primary font-bold tracking-tighter uppercase text-xs">
+<span class="material-symbols-outlined text-base">router</span>
+                        Hands-on Lab · Actual Devices · Pair Work
+                    </div>
+<h4 class="text-2xl font-bold">Stopping a Ping Flood on a Physical SDN</h4>
+<ul class="list-disc pl-5 space-y-2 text-on-surface-variant leading-relaxed">
+<li>Turned a Raspberry Pi 3 into an OpenFlow switch: flashed a Raspbian image with Open vSwitch, created the bridge, added the USB-to-Ethernet ports and pointed it at a Floodlight controller.</li>
+<li>Used Postman as the SDN application, calling Floodlight's REST API to list every device the controller tracked and to read per-port RX/TX bandwidth before and during a ping flood.</li>
+<li>Treated the ping flood as an attack and blocked only the attacker's ICMP traffic by pushing an ACL deny rule through the API. The hosts went from steady replies to "Request timed out", and clearing the ACL restored traffic.</li>
+</ul>
+<div class="flex flex-wrap gap-2 mt-auto pt-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Raspberry Pi 3</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Open vSwitch</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Floodlight</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Postman</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">REST API</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">ACL</span>
+</div>
+</article>
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 text-primary font-bold tracking-tighter uppercase text-xs">
+<span class="material-symbols-outlined text-base">lan</span>
+                        Hands-on Lab · Virtual SDN
+                    </div>
+<h4 class="text-2xl font-bold">Virtual SDN with Mininet &amp; Floodlight</h4>
+<ul class="list-disc pl-5 space-y-2 text-on-surface-variant leading-relaxed">
+<li>Built a virtual software-defined network: a Floodlight controller managing a Mininet Open vSwitch topology over OpenFlow 1.3.</li>
+<li>Mapped the topology, switch ID and host MAC/IP addresses through the Floodlight web UI.</li>
+<li>Used Postman as the management plane to query tracked devices and push a static flow rule allowing traffic from host 1 to host 2.</li>
+</ul>
+<div class="flex flex-wrap gap-2 mt-auto pt-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Mininet</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">OpenFlow 1.3</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Floodlight</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Postman</span>
+</div>
+</article>
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 text-primary font-bold tracking-tighter uppercase text-xs">
+<span class="material-symbols-outlined text-base">bug_report</span>
+                        Offensive Security
+                    </div>
+<h4 class="text-2xl font-bold">Man-in-the-Middle Exercise</h4>
+<ul class="list-disc pl-5 space-y-2 text-on-surface-variant leading-relaxed">
+<li>Carried out a man-in-the-middle attack on a server–client exchange to see how unprotected traffic can be intercepted and altered.</li>
+<li>Studied vulnerability assessment, penetration testing and Transport Layer Security as defenses.</li>
+</ul>
+<div class="flex flex-wrap gap-2 mt-auto pt-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">MITM</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">VAPT</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">TLS</span>
+</div>
+</article>
+</div>
+</div>
+<div class="flex justify-center -my-6" aria-hidden="true"><span class="material-symbols-outlined text-primary-container text-4xl">south</span></div>
+<!-- InfoEng 3 -->
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-on-primary font-bold shrink-0">3</span>
+<h3 class="text-2xl font-bold font-serif italic text-primary">Information Engineering 3 <span class="block md:inline text-xs uppercase tracking-widest not-italic font-sans font-bold text-secondary/70 md:ml-2">Final · The Last Campaign</span> <span class="text-base not-italic font-sans font-medium text-secondary/70">· CPE 3353 · 2026</span></h3>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 text-primary font-bold tracking-tighter uppercase text-xs">
+<span class="material-symbols-outlined text-base">smart_toy</span>
+                        AI Security Automation · Team Project
+                    </div>
+<h4 class="text-2xl font-bold">Intelligent Security Management using SDN</h4>
+<ul class="list-disc pl-5 space-y-2 text-on-surface-variant leading-relaxed">
+<li>Built a closed-loop system that detects and blocks denial-of-service floods on a physical SDN: a Raspberry Pi 3 running Open vSwitch, controlled by Floodlight over a separate out-of-band management link.</li>
+<li>Mirrored traffic to a Scapy packet sniffer that turns each 3-second window into a 6-feature vector (packet rate, byte rate, ICMP/TCP/UDP/ARP ratios) for a linear SVM classifier.</li>
+<li>When an attacker is flagged, the AI agent calls Floodlight's REST API to push per-IP drop rules, re-applies them if they are cleared mid-attack, and handles multiple simultaneous attackers.</li>
+<li>Tested against ICMP ping floods, TCP SYN floods, zero-payload UDP floods, ARP storms and giant-payload floods, with attacker roles rotated across hosts.</li>
+</ul>
+<div class="flex flex-wrap gap-2 mt-auto pt-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">SDN</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Floodlight</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Open vSwitch</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Python · Scapy</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">SVM</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Postman</span>
+</div>
+</article>
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 text-primary font-bold tracking-tighter uppercase text-xs">
+<span class="material-symbols-outlined text-base">fact_check</span>
+                        Formal Verification · Team Project
+                    </div>
+<h4 class="text-2xl font-bold">Verifying a Three-Party Authentication Protocol</h4>
+<ul class="list-disc pl-5 space-y-2 text-on-surface-variant leading-relaxed">
+<li>Modeled a sensor node / mobile node / server protocol (password-keyed hashes, elliptic-curve Diffie–Hellman shares, digital signatures) in Scyther's SPDL language.</li>
+<li>Verified 25 security claims against a Dolev–Yao attacker: the sensor node and server passed every claim, but the mobile node failed 8 of its 9.</li>
+<li>Traced the flaw through Scyther's attack graphs: the sensor node is never authenticated to the mobile node, so an intruder can swap in its own key share and control both session keys.</li>
+</ul>
+<div class="flex flex-wrap gap-2 mt-auto pt-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Scyther</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">SPDL</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">ECDH</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Protocol Analysis</span>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects (formerly Heroic Artifacts & Skills) -->
+<section class="py-32 px-6 max-w-7xl mx-auto bg-surface-container-low rounded-[2rem]" id="artifacts">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="text-4xl font-bold mb-6 italic font-serif">Command &amp; Arsenal</h2>
+<p class="text-on-surface-variant text-lg">A captain is measured by the company he keeps and the tools he carries. Here are the leadership, skills and builds that got him here.</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-4xl opacity-40">token</span>
+<span class="material-symbols-outlined text-primary text-4xl opacity-60">deployed_code</span>
+<span class="material-symbols-outlined text-primary text-4xl opacity-40">memory</span>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Project/Leadership Card -->
+<div class="col-span-1 md:col-span-2 bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col md:flex-row gap-8">
+<div class="md:w-1/2 space-y-6">
+<div class="inline-flex items-center gap-2 text-primary font-bold tracking-tighter uppercase text-xs">
+<span class="material-symbols-outlined text-base">verified</span>
+                        Core Leadership
+                    </div>
+<h3 class="text-3xl font-bold">USC Computer Engineering Council</h3>
+<p class="text-on-surface-variant leading-relaxed">A member of the USC Computer Engineering Council (2023 — 2026), supporting fellow engineers, helping run department technical events, and fostering a community of innovation and collaboration.</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Strategic Planning</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Community Building</span>
+</div>
+</div>
+<div class="md:w-1/2 rounded-lg overflow-hidden">
+<img alt="USC Computer Engineering Council (CpEC) logo" class="w-full h-full aspect-square object-cover" src="images/cpec-logo.webp" width="800" height="800" loading="lazy"/>
+</div>
+</div>
+<!-- Skills Bento Card -->
+<div class="bg-primary text-on-primary p-10 rounded-xl shadow-lg flex flex-col justify-between">
+<div>
+<h3 class="text-2xl font-bold mb-8">Arsenal</h3>
+<ul class="space-y-5 font-serif italic text-lg">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined">terminal</span>
+                            Python, Java, C &amp; JavaScript
+                        </li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined">lan</span>
+                            SDN &amp; Network Security
+                        </li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined">fact_check</span>
+                            Protocol Verification (Scyther)
+                        </li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined">location_chip</span>
+                            Microcontrollers &amp; PCB Design
+                        </li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined">layers</span>
+                            Data Structures &amp; Algorithms
+                        </li>
+</ul>
+</div>
+<div class="mt-8 pt-8 border-t border-on-primary/10">
+<p class="text-sm opacity-80 uppercase tracking-widest font-sans">Leveling Up</p>
+<p class="font-bold">Cloud Security</p>
+</div>
+</div>
+</div>
+<!-- Hardware & Other Builds -->
+<h3 class="text-2xl font-bold italic font-serif mt-16 mb-8">Forged in Hardware</h3>
+<div class="grid md:grid-cols-3 gap-8">
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-3">
+<span class="text-xs font-bold text-secondary/60 italic font-serif">2025 · CPE 3201 Embedded Systems</span>
+<h4 class="text-xl font-bold">Line-Following Robot</h4>
+<p class="text-on-surface-variant leading-relaxed">A PD-controlled line follower driven by a PIC16F877A, reading a QTR-8D sensor array and driving motors through a TB6612FNG driver.</p>
+<p class="text-xs font-bold uppercase tracking-wide text-primary mt-auto pt-2">PIC16F877A · C · PD Control</p>
+</article>
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-3">
+<span class="text-xs font-bold text-secondary/60 italic font-serif">2024 · CPEA 2202 Electronic Circuits</span>
+<h4 class="text-xl font-bold">Regulated DC Power Supply</h4>
+<p class="text-on-surface-variant leading-relaxed">Designed and simulated a regulated DC power supply circuit.</p>
+<p class="text-xs font-bold uppercase tracking-wide text-primary mt-auto pt-2">Circuit Design · Proteus</p>
+</article>
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-3">
+<span class="text-xs font-bold text-secondary/60 italic font-serif">2023 · Senior High Research</span>
+<h4 class="text-xl font-bold">Smart Plant Monitoring System</h4>
+<p class="text-on-surface-variant leading-relaxed">An Arduino Uno system that reads environmental sensors to monitor plant growing conditions.</p>
+<p class="text-xs font-bold uppercase tracking-wide text-primary mt-auto pt-2">Arduino Uno · C/C++ · Sensors</p>
+</article>
+</div>
+</section>
+<!-- Hero's Pastimes (Hobbies) -->
+<section class="py-32 px-6 max-w-7xl mx-auto" id="pastimes">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-2">Off Duty</h2>
+<p class="text-secondary italic font-serif">Even a captain lays down the sword sometimes.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Genshin -->
+<div class="flex flex-col gap-4 group">
+<div class="relative aspect-square rounded-xl overflow-hidden shadow-sm">
+<img alt="Genshin Impact" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="images/genshin-impact.webp" width="236" height="236" loading="lazy"/>
+</div>
+<p class="text-center font-serif text-lg text-secondary">Genshin Impact</p>
+</div>
+<!-- osu! -->
+<div class="flex flex-col gap-4 group">
+<div class="relative aspect-square rounded-xl overflow-hidden shadow-sm">
+<img alt="osu!" class="w-full h-full object-contain p-4 bg-white transition-transform duration-500 group-hover:scale-110" src="images/osu.webp" width="600" height="600" loading="lazy"/>
+</div>
+<p class="text-center font-serif text-lg text-secondary">osu!</p>
+</div>
+<!-- Cloud Security -->
+<div class="flex flex-col gap-4 group">
+<div class="relative aspect-square rounded-xl overflow-hidden shadow-sm">
+<img alt="Cloud Security" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="images/cloud-security.webp" loading="lazy"/>
+</div>
+<p class="text-center font-serif text-lg text-secondary">Cloud Security</p>
+</div>
+<!-- Workout -->
+<div class="flex flex-col gap-4 group">
+<div class="relative aspect-square rounded-xl overflow-hidden shadow-sm">
+<img alt="Workout" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="images/workout.webp" loading="lazy"/>
+</div>
+<p class="text-center font-serif text-lg text-secondary">Workout</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 border-t border-slate-800 bg-slate-950 flex flex-col items-center gap-6 px-4 text-center">
+<div class="text-lg font-serif text-sky-100">The Captain's Watch</div>
+<div class="flex gap-8 font-serif text-sm italic">
+<a class="text-slate-400 hover:text-sky-200 transition-opacity" href="#about">The Oath</a>
+<a class="text-slate-400 hover:text-sky-200 transition-opacity" href="#quests">Campaigns</a>
+<a class="text-slate-400 hover:text-sky-200 transition-opacity" href="#education">Service Record</a>
+</div>
+<div class="flex gap-6 mt-2">
+<a class="text-slate-400 hover:text-primary transition-colors flex items-center gap-2 font-serif italic text-sm" href="https://github.com/aucs0n" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg> 
+            GitHub
+        </a>
+<a class="text-slate-400 hover:text-primary transition-colors flex items-center gap-2 font-serif italic text-sm" href="https://www.linkedin.com/in/ghemarson-john-nacua-4422b8289" target="_blank" rel="noopener">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+            LinkedIn
+        </a>
+<a class="text-slate-400 hover:text-primary transition-colors flex items-center gap-2 font-serif italic text-sm" href="https://www.youtube.com/@aucs0n" target="_blank">
+<span class="material-symbols-outlined text-xl">play_circle</span> 
+            YouTube
+        </a>
+</div>
+<div class="w-12 h-[1px] bg-slate-700"></div>
+<p class="font-serif text-sm italic text-sky-100">
+        Loyal to the team. Steadfast at the line.
+    </p>
+<p class="text-[10px] uppercase tracking-widest text-slate-400 mt-4">
+        © 2026 Ghemarson John Nacua. Crafted with honor.
+    </p>
+</footer>
+</body></html>
