@@ -149,12 +149,7 @@
 <div class="grid md:grid-cols-2 gap-16 items-center">
 <div class="relative">
 <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
-<div role="img" aria-label="Captain's shield emblem" class="w-full h-full relative flex flex-col items-center justify-center text-on-surface" style="background: linear-gradient(160deg, #1c2733 0%, #0b1016 70%);">
-<svg class="absolute bottom-0 left-0 w-full opacity-60" viewBox="0 0 400 160" preserveAspectRatio="none" aria-hidden="true"><path d="M0 160 L0 110 L70 50 L120 90 L190 20 L260 95 L320 55 L400 105 L400 160 Z" fill="#2b4a66"></path></svg>
-<span class="material-symbols-outlined text-tertiary mb-4" style="font-size:5rem">shield</span>
-<span class="font-serif font-bold tracking-widest" style="font-size:4.5rem;line-height:1">GJN</span>
-<span class="mt-4 text-xs uppercase tracking-[0.35em] text-primary">Computer Engineering · USC</span>
-</div>
+<img alt="Il Capitano, the Captain of the Fatui Harbingers" class="w-full h-full object-cover object-top" src="images/capitano-portrait.webp" width="800" height="1000"/>
 </div>
 <div class="absolute -bottom-8 right-0 md:-right-8 bg-tertiary-fixed p-8 rounded-xl shadow-xl max-w-xs">
 <p class="font-serif italic text-on-tertiary-fixed-variant leading-relaxed">
@@ -191,7 +186,10 @@
 <!-- Current Quest -->
 <section class="py-24 bg-surface-container-low">
 <div class="max-w-7xl mx-auto px-6">
-<div class="bg-surface-container-lowest rounded-xl p-12 shadow-sm border border-outline-variant/10 flex flex-col md:flex-row items-center gap-12">
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-12 shadow-sm border border-outline-variant/10">
+<img alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover object-center opacity-60" src="images/capitano-eclipse.webp" loading="lazy"/>
+<div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(11,16,22,0.92) 0%, rgba(11,16,22,0.80) 55%, rgba(11,16,22,0.45) 100%);"></div>
+<div class="relative flex flex-col md:flex-row items-center gap-12">
 <div class="md:w-1/3">
 <div class="w-24 h-24 bg-primary-container/20 rounded-full flex items-center justify-center mb-6">
 <span class="material-symbols-outlined text-5xl text-primary" data-weight="fill">shield_person</span>
@@ -206,6 +204,7 @@
 <p class="text-on-surface-variant text-lg leading-relaxed">
                         Every front line needs a guard. Ghemarson is now training in Cloud Security, learning to harden cloud architectures and protect data wherever it lives.
                     </p>
+</div>
 </div>
 </div>
 </div>
@@ -539,9 +538,11 @@
 </section>
 <!-- Hero's Pastimes (Hobbies) -->
 <section class="py-32 px-6 max-w-7xl mx-auto" id="pastimes">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-bold mb-2">Off Duty</h2>
-<p class="text-secondary italic font-serif">Even a captain lays down the sword sometimes.</p>
+<div class="relative overflow-hidden rounded-2xl text-center mb-16 py-16 px-6">
+<img alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover object-center" src="images/capitano-meadow.webp" loading="lazy"/>
+<div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(11,16,22,0.55) 0%, rgba(11,16,22,0.75) 100%);"></div>
+<h2 class="relative text-4xl font-bold mb-2">Off Duty</h2>
+<p class="relative text-on-primary-container italic font-serif">Even a captain lays down the sword sometimes.</p>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 <!-- Genshin -->
